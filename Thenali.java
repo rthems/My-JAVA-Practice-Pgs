@@ -7,8 +7,24 @@ class Thenali
           //  storyobj.flowers_count(7);
           //  storyobj.print_1();
             storyobj.Dosa_count();
+            storyobj.Dosa_counts();
     } 
-    
+     void Dosa_counts()
+    {
+        int no_of_dosas=8, no_of_meals=1, total_dosas=0, dosa_ate_eachtime=0;             
+            while(no_of_meals<=3)
+            {
+                dosa_ate_eachtime = no_of_dosas/2;
+                System.out.println(" Dosas Ate: " + dosa_ate_eachtime);
+                total_dosas = total_dosas + dosa_ate_eachtime;
+                no_of_dosas = no_of_dosas + dosa_ate_eachtime;
+                no_of_meals = no_of_meals + 1;
+            }
+            
+                System.out.println("\n The total dosa the chef made= " + no_of_dosas);
+                System.out.println("\n The total dosas the boy ate = " + total_dosas);
+    }
+   
     void Dosa_count()
     { 
         int leftover_dosas=8, no_of_meals=1,totaldosas_ate=0;
